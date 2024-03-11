@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GuessTheWord</string>
+    <string name="Q1">Hint1: Keys,Space,Enter, no lock.</string>
+    <string name="Q2">Hint2: Take more, leave behind</string>
+    <string name="Q3">Hint3: Fly without wings, cry without eyes</string>
+    <string name="textBlank">Letter</string>
+    <string name="inputLetter">hint</string>
+    <string name="okbutton">OK</string>
+    <string name="textFinalWord">Final Answer</string>
+    <string name="submitbutton">Submit</string>
+    <string name="correct">Correct!</string>
+    <string name="Wrong">Wrong!</string>
+    <string name="nextButton">Next</string>
+</resources>

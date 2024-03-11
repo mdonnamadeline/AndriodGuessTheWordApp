@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guess The Word"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txthint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <TextView
+        android:id="@+id/txtblank"
+        android:layout_width="217dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="28dp"
+        android:text="_ _ _ _ _ _"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="106dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/txtFinalWord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/okbutton" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtFinalWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="373dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enter Letter:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtEnterLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="200dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="76dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submitbutton" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nextButton" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txthint"
+        android:layout_width="356dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="12dp"
+        android:text="Keys, space, enter, no lock. "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtblank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
