@@ -177,6 +177,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //comment
+
     private void provideHint() {
         if (hintAttempts > 0) {
             // Decrease hint attempts for each hint
